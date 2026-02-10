@@ -1,4 +1,4 @@
-package recursion;
+package array.sorting.recursion;
 //Not for bigger value like 20
 public class Factorial {
     public static void main(String[] args) {
