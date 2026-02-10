@@ -46,7 +46,7 @@ public class MergeSort {
             k++;
         }
 
-        while (i < n2) {
+        while (j < n2) {
             arr[k] = lArr[j];
             j++;
             k++;
