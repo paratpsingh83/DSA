@@ -8,6 +8,7 @@ public class MergeSort {
             int mid = (l + r) / 2;
             mergeSort(arr, l, mid);
             mergeSort(arr, mid + 1, r);
+
             merge(arr, l, mid, r);
         }
     }
@@ -47,7 +48,7 @@ public class MergeSort {
         }
 
         while (j < n2) {
-            arr[k] = lArr[j];
+            arr[k] = rArr[j];
             j++;
             k++;
         }
@@ -61,7 +62,6 @@ public class MergeSort {
         System.out.println();
 
         mergeSort(arr, 0, arr.length - 1);
-
 
         System.out.println("After Sorting ");
         for (int n : arr) {
